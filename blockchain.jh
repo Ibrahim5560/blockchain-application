@@ -1,0 +1,30 @@
+
+/**
+ * ClientAccount (client_account) entity.\n @author Ibrahim Mohamed.
+ */
+entity ClientAccount {  
+	accountNumber String
+	owner String
+	balance Double
+	creationDate LocalDate
+} 
+/**
+ * AccountTransaction (account_transaction) entity.\n @author Ibrahim Mohamed.
+ */
+entity AccountTransaction { 
+  	transactionName String
+	amount Double
+} 
+
+
+// defining multiple OneToMany relationships with comments
+relationship OneToMany {	
+	ClientAccount {clientAccount} to AccountTransaction
+}
+
+paginate all with pagination
+dto * with mapstruct
+service all with serviceImpl
+filter all
+
+         

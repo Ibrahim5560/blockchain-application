@@ -1,0 +1,25 @@
+{
+  "annotations": {
+    "changelogDate": "20240209125225"
+  },
+  "applications": "*",
+  "documentation": "AccountTransaction (account_transaction) entity.\\n @author Ibrahim Mohamed.",
+  "dto": "mapstruct",
+  "entityTableName": "account_transaction",
+  "fields": [
+    {
+      "fieldName": "transactionName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "amount",
+      "fieldType": "Double"
+    }
+  ],
+  "jpaMetamodelFiltering": false,
+  "name": "AccountTransaction",
+  "pagination": "pagination",
+  "relationships": [],
+  "searchEngine": "no",
+  "service": "serviceImpl"
+}

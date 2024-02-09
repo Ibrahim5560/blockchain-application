@@ -1,0 +1,40 @@
+{
+  "annotations": {
+    "changelogDate": "20240209125125"
+  },
+  "applications": "*",
+  "documentation": "ClientAccount (client_account) entity.\\n @author Ibrahim Mohamed.",
+  "dto": "mapstruct",
+  "entityTableName": "client_account",
+  "fields": [
+    {
+      "fieldName": "accountNumber",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "owner",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "balance",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "creationDate",
+      "fieldType": "LocalDate"
+    }
+  ],
+  "jpaMetamodelFiltering": false,
+  "name": "ClientAccount",
+  "pagination": "pagination",
+  "relationships": [
+    {
+      "otherEntityName": "accountTransaction",
+      "relationshipName": "clientAccount",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-many"
+    }
+  ],
+  "searchEngine": "no",
+  "service": "serviceImpl"
+}
