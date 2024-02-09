@@ -1,0 +1,28 @@
+
+/**
+ * Accounts (accounts) entity.\n @author Ibrahim Mohamed.
+ */
+entity Account {  
+	accountNumber String
+	owner String
+	balance Double
+	creationDate LocalDate
+} 
+/**
+ * Transaction (transaction) entity.\n @author Ibrahim Mohamed.
+ */
+entity Transaction { 
+  	transactionName String
+	sender Account
+	receiver Account
+	ledger List
+	amount Double
+} 
+
+
+paginate all with pagination
+dto * with mapstruct
+service all with serviceImpl
+filter all
+
+         
